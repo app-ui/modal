@@ -1,0 +1,28 @@
+{
+	"name": "app.ui.modal",
+	"version": "0.0.1",
+	"author": "makesites",
+	"authors": [
+		"Makis Tracend <makis@makesit.es>"
+	],
+	"description": "A custom element to present modals",
+	"keywords": [
+		"app-ui",
+		"ui",
+		"component",
+		"web-components"
+	],
+	"license": "MIT",
+	"repository" : "http://github.com/app-ui/modal",
+	"main": ["./src/main.js"],
+	"ignore": [
+		"bower_components",
+		"components",
+		"node_modules"
+	],
+	"dependencies": {
+		"backbone.app": "*",
+		"backbone.ui.modal": "*",
+		"webcomponentsjs": "*"
+	}
+}
