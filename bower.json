@@ -7,7 +7,7 @@
 	],
 	"description": "A custom element to present modals",
 	"keywords": [
-		"app",
+		"app-ui",
 		"ui",
 		"component",
 		"web-components"
@@ -21,6 +21,7 @@
 		"node_modules"
 	],
 	"dependencies": {
+		"backbone.app": "*",
 		"backbone.ui.modal": "*",
 		"webcomponentsjs": "*"
 	}
