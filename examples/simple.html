@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>APP UI: Modal</title>
+
+<link rel="import" href="../">
+
+</head>
+<body>
+
+<div id="main">
+	<p>This is the most common usage of a modal, using the content we provide...</p>
+	<a href="" id="new-modal">Click me</a>
+</div>
+
+<!-- example -->
+<script type="text/javascript">
+var button = document.getElementById("new-modal");
+
+button.addEventListener('click', function( e ) {
+	e.preventDefault();
+
+	var el = document.createElement("ui-modal");
+	// add content
+	el.innerHTML = "This is my content";
+	// attributes...
+	document.body.appendChild(el);
+
+	return false;
+});
+
+</script>
+
+</body>
+</html>
