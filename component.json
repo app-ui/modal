@@ -21,6 +21,7 @@
 		"node_modules"
 	],
 	"dependencies": {
+		"app": "*",
 		"backbone.app": "*",
 		"backbone.ui.modal": "*",
 		"webcomponentsjs": "*"
