@@ -10,10 +10,19 @@
 	// Fires when an instance was inserted into the document
 	el.attachedCallback = function() {
 
-		// gather options
+		// gather attributes
+		var src = this.getAttribute("src");
+		var html = this.innerHTML;
+		// variables
 		var self = this;
+		// set options
 		var options = {
+			silentRender: true, // don't trigger event when rendering
+			inRender: true, // include options in render vars
 		};
+		options.url = ( src ) ? src : "/components/backbone.ui.modal/assets/html/modal.html"; // fallback
+		if( html ) options.html = html;
+
 		// ...
 		// shadowroot option (resolve issues before exposing as option...)
 		var hidden = false;
@@ -25,7 +34,7 @@
 
 	// Fires when an instance was removed from the document
 	el.detachedCallback = function() {
-		if( this.view ) this.view.destroy();
+		//if( this.view ) this.view.destroy();
 	};
 
 	// Fires when an attribute was added, removed, or updated
